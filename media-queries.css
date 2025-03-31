@@ -5,9 +5,11 @@
     }
 
     .padd {
-        width: 90vw;
-        padding-right: 5vw;
-        padding-left: 5vw;
+        width: 86vw;
+        padding-right: 7vw;
+        padding-left: 7vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     #aologistics .padd {
@@ -15,20 +17,16 @@
     }
 
     #logo {
-        width: 50%;
+        width: fit-content;
     }
 
     #logo img {
         max-width: 120px;
-        width: 35vw;
+        width: 30vw;
     }
 
     header {
         height: 55px;
-    }
-
-    #head-mini-div {
-        opacity: 0;
     }
 
     .links-div {
@@ -38,5 +36,64 @@
 
     .pages-div {
         width: 100%;
+    }
+
+    #head-mini-div{
+        display: none;
+    }
+
+    #we-do-block .useless-div {
+        flex-direction: column;
+    }
+
+    #right {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #left {
+        padding-right: 0;
+    }
+
+    #right div {
+        width: 100%;
+    }
+    
+    #left {
+        width: 100%;
+    }
+
+    #we-do-block {
+        padding-bottom: 0;
+    }
+
+    #stats .padd .useless-div {
+        flex-direction: column;
+    }
+
+    .stats-card {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .upper-foot, .down-foot{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .upper-foot h3 {
+        display: none;
+    }
+
+    .down-foot .header-bar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #bigmarginpadd {
+        padding: 50px;
+        width: 86vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
     }
 }
