@@ -16,6 +16,16 @@
         padding: 5vw;
     }
 
+    #aologistics {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    #about-us-menu-bar {
+        background-size: cover;
+        background-position-x: center;
+    }
+
     #logo {
         width: fit-content;
     }
@@ -90,10 +100,62 @@
         flex-direction: column;
     }
 
+    .down-foot #foot-mini-div {
+        width: 100%;
+    }
+
     #bigmarginpadd {
         padding: 50px;
         width: 86vw;
         padding-left: 7vw;
         padding-right: 7vw;
+    }
+
+    .pages-div a {
+        margin-right: 0;
+    }
+
+    .pages-div {
+        width: 75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28pt;
+    }
+
+    #main-block {
+        height: 86vh;
+    }
+
+    #main-text {
+        width: 100%;
+        max-width: none;
+        justify-content: space-around;
+    }
+
+    #oco img {
+        display: none;
+    }
+
+    #overview {
+        margin: 0;
+        max-width: 86vw;
+    }
+
+    .rep {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .cust-card {
+        width: 100%;
     }
 }

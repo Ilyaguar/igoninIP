@@ -87,6 +87,7 @@ header h2, h3 {
 #logo {
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 #head-mini-div {
@@ -141,9 +142,13 @@ header .padd {
 
 .menu-bar {
     height: 50px;
+    width: 100vw;
     /* background-color: #ffbe34; */
-    background-image: url(media/Backgroound.jpg);
+    /* background-image: url(media/Backgroound.jpg); */
     background-size: cover;
+    background-color: #0912428e;
+    position: relative;
+
 }
 
 .menu-bar .padd {
@@ -154,7 +159,7 @@ header .padd {
     backdrop-filter: blur(2px); 
     width: 100%;
     height: 100%;
-    background-color: #f4f4f431;
+    background-color: #f4f4f425;
 }
 
 .menu {
@@ -384,15 +389,15 @@ header .padd {
 }
 
 #about-us-menu-bar {
-    background-image: url(media/Banner.png);
+    /* background-image: url(media/Banner.png); */
+
 }
 
 #aologistics {
     height: 225px;
     background-image: url(media/Banner.png);
     background-size: cover;
-    background-position-y: -40px;
-    resize: both;
+    resize: vertical;
     background-repeat: no-repeat;
 }
 
@@ -613,3 +618,134 @@ footer .pages-div a {
 #stars {
     width: 100%;
 }
+
+#our-projects {
+    background-image: url(media/dalnoboischik-v7.orig.png);
+    height: 500px;
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #091242e8, #ffffff00);
+}
+
+.gradient h1 {
+    color: white;
+}
+
+.gradient .useless-div {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#left-g-img-div {
+    width: 600px;
+    height: 600px;
+    background-image: url(media/gallery1.jpeg);
+    background-size: cover;
+    background-position-x: -220px;
+}
+
+#right-g-img-div {
+    width: 340px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-g-img-div div{
+    width: 280px;
+    height: 280px;
+}
+
+#g1 {
+    background-image: url(media/gallery2.jpg);
+    background-size: cover;
+}
+
+#g2 {
+    background-image: url(media/gallery3.jpg);
+    background-size: cover;
+}
+
+.op-div {
+    background-color: var(--color-primary2);
+    opacity: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-img {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.slide-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.slide-strip {
+    flex: 1;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    z-index: 2;
+}
+.prev { left: 20px; }
+.next { right: 20px; }
